@@ -2,7 +2,7 @@ var dailyTemperatures = function (T) {
     //declare result set with same length as input and default value 0
     let result = new Array(T.length).fill(0);
     //declare stack/array
-    let stack = [];//[]
+    let stack = [];
     //reverse loop over T 
     for(let index = T.length-1; index >= 0; index-- ){//index = 6;
 
@@ -24,6 +24,7 @@ var dailyTemperatures = function (T) {
             while ((T[index] >= T[stack[stack.length - 1]] ) && stack.length ) { //76 >= 73
                 stack.pop();
             }
+            if(stack.length)result[index] = stack[stack.length - 1] - index;
             stack.push(index)
         }
     }
@@ -32,4 +33,5 @@ var dailyTemperatures = function (T) {
 };
     //0    1    2   3   4   5   6   7
 //T = [73, 74, 75, 71, 69, 72, 76, 73]
-//R = [0, 0, 0, 0, 0, 0, 0, 0]
+//R = [0,  0,  0,  0,  1,  1,  0,  0]
+//S = //[6,5]
