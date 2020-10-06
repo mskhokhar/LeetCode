@@ -1,0 +1,1 @@
+var largestRectangleArea = function (heights) {};
