@@ -1,1 +1,3 @@
-var jump = function (nums) {};
+var jump = function (nums) {
+    let nums = [];
+};
