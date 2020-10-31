@@ -1,1 +1,3 @@
-var mergeKLists = function (lists) {};
+var mergeKLists = function (lists) {
+    let lists = [];
+};
