@@ -12,5 +12,5 @@
  * @return {number}
  */
 var kthSmallest = function (root, k) {
-
+    k = test;
 };
